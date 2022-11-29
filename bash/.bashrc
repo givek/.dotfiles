@@ -74,6 +74,7 @@ xterm*|rxvt*)
 esac
 
 export PS1="\[\e[1m\]\[$(tput setaf 1)\]\u\[$(tput setaf 7)\]\[\e[0m\]@\[\e[1m\]\[$(tput setaf 1)\]\h:\[$(tput setaf 4)\]\w\[$(tput sgr0)\]\[\e[0m\]$ "
+# export PS1="\[\e[33m\][\[\e[m\]\[\e[31m\]\u\[\e[m\]@\[\e[31m\]\h\[\e[m\]: \[\e[36m\]\W\[\e[m\]\[\e[33m\]]\[\e[m\]\\$ "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -119,3 +120,19 @@ if ! shopt -oq posix; then
   fi
 fi
 source "$HOME/.cargo/env"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# poetry path
+ export PATH="$HOME/.local/bin/:$PATH"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# deno
+export DENO_INSTALL="/home/vivek/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+# go
+export PATH=$PATH:/usr/local/go/bin
