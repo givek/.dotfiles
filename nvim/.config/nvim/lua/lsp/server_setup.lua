@@ -12,7 +12,9 @@ local servers = {
     "sumneko_lua",
     "pyright",
     "tsserver",
+    "jsonls",
     "gopls",
+    "clangd"
 }
 
 for _, server in pairs(servers) do

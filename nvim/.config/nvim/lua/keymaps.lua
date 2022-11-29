@@ -8,3 +8,7 @@ vim.api.nvim_set_keymap("n", "<C-Up>", ":resize +2<CR>", { noremap = true, silen
 vim.api.nvim_set_keymap("n", "<C-Down>", ":resize -2<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-Left>", ":vertical resize -2<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<C-Right>", ":vertical resize +2<CR>", { noremap = true, silent = true })
+
+
+-- format buffer
+vim.api.nvim_set_keymap("n", "<C-S-i>", "<cmd>lua vim.lsp.buf.format()<CR>", { noremap = true, silent = true })

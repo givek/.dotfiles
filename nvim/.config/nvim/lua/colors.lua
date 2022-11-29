@@ -6,10 +6,28 @@ vim.wo.winblend = 0
 vim.go.wildoptions = "pum"
 vim.go.pumblend = 5
 
-require("catppuccin").setup({
-    styles = {
-        keywords = { "italic" },
-    },
-})
+-- catppuccin config
+--
+-- require("catppuccin").setup({
+--     styles = {
+--         keywords = { "italic" },
+--     },
+-- })
 
-vim.cmd "colorscheme catppuccin"
+
+-- material config
+--
+-- vim.g.material_style = "deep ocean"
+
+
+-- gruvbox config
+--
+-- vim.g.gruvbox_flat_style = "hard"
+
+
+vim.cmd "colorscheme kanagawa"
+
+-- require("neosolarized").setup({
+--     comment_italics = true,
+--     background_set = false,
+-- })
