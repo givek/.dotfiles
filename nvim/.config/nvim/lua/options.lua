@@ -10,7 +10,7 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 vim.o.ignorecase = true
 vim.o.hlsearch = true
-vim.o.laststatus=3
+vim.o.laststatus = 3
 
 vim.wo.number = true
 vim.wo.relativenumber = true

@@ -2,8 +2,6 @@ local null_ls = require("null-ls")
 
 null_ls.setup({
     sources = {
-        null_ls.builtins.completion.spell,
-
         -- python
         null_ls.builtins.formatting.black,
 
@@ -13,5 +11,8 @@ null_ls.setup({
 
         -- go
         null_ls.builtins.formatting.gofmt,
+
+        -- other
+        -- null_ls.builtins.completion.spell,
     },
 })
