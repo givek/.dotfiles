@@ -25,7 +25,9 @@ vim.go.pumblend = 5
 -- vim.g.gruvbox_flat_style = "hard"
 
 
-vim.cmd "colorscheme kanagawa"
+-- vim.cmd "colorscheme kanagawa"
+
+require('palenightfall').setup()
 
 -- require("neosolarized").setup({
 --     comment_italics = true,
