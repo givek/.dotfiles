@@ -136,3 +136,15 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 
 # go
 export PATH=$PATH:/usr/local/go/bin
+
+# Added by Toolbox App
+export PATH="$PATH:/home/vivek/.local/share/JetBrains/Toolbox/scripts"
+
+
+# >>> coursier install directory >>>
+export PATH="$PATH:/home/vivek/.local/share/coursier/bin"
+# <<< coursier install directory <<<
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH

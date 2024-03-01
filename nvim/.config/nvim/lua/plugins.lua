@@ -8,10 +8,10 @@ return require("packer").startup(
         use "wbthomason/packer.nvim"
 
         -- colorschemes
+        use 'JoosepAlviste/palenightfall.nvim'
         use { "catppuccin/nvim", as = "catppuccin" }
         use "marko-cerovac/material.nvim"
         use "eddyekofo94/gruvbox-flat.nvim"
-        use "olimorris/onedarkpro.nvim"
         use {
             "https://gitlab.com/HiPhish/resolarized.nvim",
             as = "resolarized"
@@ -50,6 +50,7 @@ return require("packer").startup(
             "nvim-telescope/telescope.nvim", branch = "0.1.x",
             requires = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" }
         }
+        use { "nvim-telescope/telescope-file-browser.nvim" }
 
         -- treesitter
         use {
@@ -73,6 +74,9 @@ return require("packer").startup(
             "windwp/nvim-autopairs",
             config = function() require("nvim-autopairs").setup {} end
         }
+
+        -- indent-blankline
+        -- use "lukas-reineke/indent-blankline.nvim"
     end
 
 )

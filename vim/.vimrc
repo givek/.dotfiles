@@ -29,12 +29,12 @@ Plug 'mbbill/undotree'
 
 call plug#end()
 
-"let g:gruvbox_contrast_dark='hard'
-"colorscheme gruvbox
-"set background=dark
-let g:material_terminal_italics = 1
-let g:material_theme_style = 'ocean-community'
-colorscheme material
+let g:gruvbox_contrast_dark='hard'
+colorscheme gruvbox
+set background=dark
+"let g:material_terminal_italics = 1
+"let g:material_theme_style = 'ocean-community'
+"colorscheme material
 
 if (has('termguicolors'))
   set termguicolors

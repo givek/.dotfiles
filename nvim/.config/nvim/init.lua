@@ -18,6 +18,8 @@ require "plugins.null-ls"
 
 require "plugins.gitsigns"
 
+-- require "plugins.indent-blankline"
+
 -- require "plugins.nvim_web_devicons"
 
 require "colors"
